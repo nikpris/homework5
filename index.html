@@ -33,14 +33,16 @@
                     <a class="link-contact link" href="mailto:info@devstudio.com">
                         <svg class="icon" width="16" height="12">
                             <use href="./images/svg/sprite.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com
+                        </svg>
+                        info@devstudio.com
                     </a>
                 </li>
                 <li class="contact-item">
                     <a class="link-contact link" href="tel:+380961111111">
                         <svg class="icon" width="10" height="16">
                             <use href="./images/svg/sprite.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11
+                        </svg>
+                        +38 096 111 11 11
                     </a>
                 </li>
             </ul>
@@ -51,7 +53,7 @@
         <section class="hero">
             <div class="hero-container">
                 <h1 class="page-title">Эффективные решения<br>для вашего бизнеса</h1>
-                <button class="button order" type="button">Заказать услугу</button>
+                <button data-modal-open class="button order" type="button">Заказать услугу</button>
             </div>
         </section>
         
@@ -85,9 +87,18 @@
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="list work-list grid">
-                    <li class="grid-item"><img src="./images/box1.jpg" alt="процесс разработки сайта" width="370" height="294"></li>
-                    <li class="grid-item"><img src="./images/box2.jpg" alt="адаптация приложения для мобильных устройств" width="370" height="294"></li>
-                    <li class="grid-item"><img src="./images/box3.jpg" alt="подбор палитры при разработке" width="370" height="294"></li>
+                    <li class="grid-item work-relative">
+                        <h3 class="work-title">Десктопные приложения</h3>
+                        <img src="./images/box1.jpg" alt="процесс разработки сайта" width="370" height="294">
+                    </li>
+                    <li class="grid-item work-relative">
+                        <h3 class="work-title">Мобильные приложения</h3>
+                        <img src="./images/box2.jpg" alt="адаптация приложения для мобильных устройств" width="370" height="294">
+                    </li>
+                    <li class="grid-item work-relative">
+                        <h3 class="work-title">Дизайнерские решения</h3>
+                        <img src="./images/box3.jpg" alt="подбор палитры при разработке" width="370" height="294">
+                    </li>
                 </ul>
             </div>
         </section>
@@ -300,6 +311,7 @@
 
             </div>
         </section>
+       
     </main>
 
 
@@ -352,5 +364,12 @@
         <div>
     </footer>
     
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="button-close" tybe="button"></button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
